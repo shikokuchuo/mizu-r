@@ -1,0 +1,6 @@
+^\.git$
+^\.gitignore$
+^\.Rproj\.user$
+^.*\.Rproj$
+^cran-comments\.md$
+^src/.*\.(o|so|dll)$

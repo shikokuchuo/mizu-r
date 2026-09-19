@@ -1,0 +1,29 @@
+Package: mizu
+Title: Single-Producer Single-Consumer Channels
+Version: 0.0.1
+Authors@R: c(
+    person("Charlie", "Gao", , "charlie.gao@posit.co", role = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-0750-061X")),
+    person("Posit Software, PBC", role = c("cph", "fnd"),
+           comment = c(ROR = "03wc8by49"))
+  )
+Description: Provides a single-producer single-consumer channel with
+    bounded capacity, optional timeouts on receives, and sentinel return
+    values for full, timeout, and closed states. The ring buffer is
+    implemented in C: sends and receives are constant-time operations,
+    values are delivered in first-in first-out order, and a closed channel
+    drains its buffered values before reporting the closed state. The
+    transport is in-process: both ends of a channel live in the calling R
+    process, which suits the channel to prototyping producer and consumer
+    designs and to testing channel-based logic.
+License: MIT + file LICENSE
+URL: https://github.com/shikokuchuo/mizu-r
+BugReports: https://github.com/shikokuchuo/mizu-r/issues
+Depends:
+    R (>= 4.1)
+Suggests:
+    testthat (>= 3.0.0)
+Config/roxygen2/markdown: TRUE
+Config/roxygen2/version: 8.1.0
+Config/testthat/edition: 3
+Encoding: UTF-8
