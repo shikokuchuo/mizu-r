@@ -1,3 +1,10 @@
+> [!IMPORTANT]
+> **Development has moved to [shikokuchuo/mizu](https://github.com/shikokuchuo/mizu).**
+>
+> This repository holds the source of mizu 0.0.1, the in-process channel package on CRAN.
+> All further development, and future releases, take place in the [mizu](https://github.com/shikokuchuo/mizu) repository.
+> Please open issues and pull requests there.
+
 # mizu
 
 Single-producer single-consumer channels for R: a bounded ring buffer
